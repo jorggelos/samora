@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+#Cabecalho {
+    max-width: 650px;
+    margin: 35px auto;
+  }
+
+  #Unidades {
+    max-width: 450px;
+    margin: 35px;
+    float: left;
+    
+  }
+
+  #Profissionais {
+    max-width: 450px;
+    margin: 35px;
+    float: left;
+  }
+
+  #Periodo {
+    max-width: 450px;
+    margin: 35px;
+    float: left;
+  }

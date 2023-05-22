@@ -24,6 +24,9 @@ export type ChartOptions = {
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   @ViewChild("chart") chart: ChartComponent | undefined;
   public chartOptions: ChartOptions;
 
@@ -59,11 +62,4 @@ export class AppComponent {
       }
     };
   }
-}
-
-export class DateRangePickerFormsExample {
-  range = new FormGroup({
-    start: new FormControl<Date | null>(null),
-    end: new FormControl<Date | null>(null),
-  });
 }
