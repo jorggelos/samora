@@ -1,13 +1,15 @@
 import { Component, ViewChild } from "@angular/core";
 import {MatTable} from '@angular/material/table';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {FormGroup, FormControl} from '@angular/forms';
+import { ApexGrid,} from 'apex-grid';
 import {
   ApexAxisChartSeries,
   ApexChart,
   ChartComponent,
   ApexDataLabels,
   ApexXAxis,
-  ApexPlotOptions
+  ApexPlotOptions,
 } from "ng-apexcharts";
 
 export type ChartOptions = {
@@ -21,7 +23,7 @@ export type ChartOptions = {
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
   title(title: any) {
@@ -31,7 +33,10 @@ export class AppComponent {
   public chartOptions: ChartOptions;
 
   constructor() {
+
+  
     this.chartOptions = {
+
       series: [
         {
           name: "Valores",
@@ -63,3 +68,5 @@ export class AppComponent {
     };
   }
 }
+
+
